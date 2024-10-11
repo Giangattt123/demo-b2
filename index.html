@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Mentor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon with CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- File css custom -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Fullstack Mentor</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <!-- Không thay đổi -->
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Course</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Introduce -->
+    <section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Evolving into a
+              <span class="text-warning">Web Developer</span> for the digital
+              age
+            </h1>
+            <p class="lead my-4">
+              As a modern web developer, you will gain the skills to create
+              responsive and user-friendly websites. <br /><br />
+
+              Dive into HTML, CSS, and JavaScript, and explore frameworks like
+              React and Vue.js to build dynamic applications. <br /><br />
+            </p>
+            <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-md-block"
+            src="assets/images/web-in-future.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End Introduce -->
+
+    <!-- New Information -->
+    <section class="bg-secondary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <h3 class="mb-3 mb-md-0">Sign up for our newsletter from us</h3>
+          <div class="input-group input-custom">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email address"
+            />
+            <button class="btn btn-dark btn-lg" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End New Information -->
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4 align-items-stretch">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-dark text-light h-100">
+              <div
+                class="card-body d-flex flex-column align-items-center text-center"
+              >
+                <div class="h1 mb-3">
+                  <i class="bi bi-book"></i>
+                </div>
+                <h3 class="cart-title mb-3">Quality Curriculum</h3>
+                <p class="cart-text">
+                  Up-to-date learning materials designed for effective study,
+                  ensuring you grasp the latest concepts and skills
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light h-100">
+              <div
+                class="card-body d-flex flex-column align-items-center text-center"
+              >
+                <div class="h1 mb-3">
+                  <i class="bi bi-person"></i>
+                </div>
+                <h3 class="cart-title mb-3">Community</h3>
+                <p class="cart-text">
+                  Connect and engage with fellow developers to foster
+                  collaboration and build a strong professional network that
+                  opens doors to new opportunities
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light h-100">
+              <div
+                class="card-body d-flex flex-column align-items-center text-center"
+              >
+                <div class="h1 mb-3">
+                  <i class="bi bi-card-list"></i>
+                </div>
+                <h3 class="cart-title mb-3">Diverse Courses</h3>
+                <p class="cart-text">
+                  Offering a diverse range of courses for all skill levels, from
+                  beginner to advanced, ensuring everyone finds their ideal
+                  learning path
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-dark text-light h-100">
+              <div
+                class="card-body d-flex flex-column align-items-center text-center"
+              >
+                <div class="h1 mb-3">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h3 class="cart-title mb-3">Expert Instructors</h3>
+                <p class="cart-text">
+                  Learn from seasoned industry professionals who share their
+                  real-world experience to enhance your skills and knowledge
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Boxes -->
+
+    <!-- Section Learn -->
+    <section class="p-5" id="learn">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="./assets/images/web-basic.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md mt-3">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+              Web Fundamentals covers the essential building blocks of modern
+              web development, including HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              Learn how to create responsive, interactive websites that follow
+              best practices in performance, accessibility, and user experience.
+              This foundation equips you to confidently build and optimize
+              websites for the digital world.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i>
+              Load More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light" id="learn">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <h2>Learn React</h2>
+            <p class="lead">
+              Web Fundamentals covers the essential building blocks of modern
+              web development, including HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              Learn how to create responsive, interactive websites that follow
+              best practices in performance, accessibility, and user experience.
+              This foundation equips you to confidently build and optimize
+              websites for the digital world.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i>
+              Load More
+            </a>
+          </div>
+          <div class="col-md mt-3">
+            <img src="./assets/images/react.svg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Learn -->
+
+    <!-- Question -->
+    <section class="p-5" id="questions">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Who is this course for?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-success fw-bold">
+                This course is ideal for beginners in web development.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                It’s also suitable for those with basic knowledge looking to
+                improve their frontend skills.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                Perfect for anyone wanting to create interactive websites or
+                start a career in frontend.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                What knowledge is required before taking this course?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-success fw-bold">
+                No prior programming experience is required.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                Basic computer skills, such as navigating the web, are helpful.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                Familiarity with HTML, CSS, and JavaScript is a plus, but not
+                necessary as these will be covered.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Is there a certificate after completing the course?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-success fw-bold">
+                Yes, you will receive a certificate upon successfully completing
+                the course.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                The certificate can be used to demonstrate your skills to
+                potential employers.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                What will learners be able to do after completing the course?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-success fw-bold">
+                Build responsive and interactive websites using HTML, CSS, and
+                JavaScript.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                Understand and implement modern frontend frameworks.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                Develop real-world projects to showcase in a portfolio.
+              </div>
+              <div class="accordion-body text-success fw-bold">
+                Apply best practices in web design and development.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Question -->
+
+    <!-- Instructors -->
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+          Our instructors all have 5+ years working as a web developer in the
+          industry
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="./assets/images/instructor1.jpg"
+                  alt="Instructor 1"
+                  class="img-fluid mb-3 rounded-circle"
+                  style="object-fit: cover; width: 100px; height: 100px"
+                />
+                <h3 class="card-title mb-3">John Willer</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum totam eos suscipit dolore accusamus architecto eius,
+                  molestias enim quam nulla.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="./assets/images/instructor2.jpg"
+                  alt="Instructor 1"
+                  class="img-fluid mb-3 rounded-circle"
+                  style="object-fit: cover; width: 100px; height: 100px"
+                />
+                <h3 class="card-title mb-3">Jonas Kun</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum totam eos suscipit dolore accusamus architecto eius,
+                  molestias enim quam nulla.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="./assets/images/instructor3.jpg"
+                  alt="Instructor 1"
+                  class="img-fluid mb-3 rounded-circle"
+                  style="object-fit: cover; width: 100px; height: 100px"
+                />
+                <h3 class="card-title mb-3">Emily Emma</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum totam eos suscipit dolore accusamus architecto eius,
+                  molestias enim quam nulla.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="./assets/images/instructor4.jpg"
+                  alt="Instructor 1"
+                  class="img-fluid mb-3 rounded-circle"
+                  style="object-fit: cover; width: 100px; height: 100px"
+                />
+                <h3 class="card-title mb-3">Paul Simon</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum totam eos suscipit dolore accusamus architecto eius,
+                  molestias enim quam nulla.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Info</h2>
+        <div class="row g-4">
+          <div class="col-md d-flex flex-column">
+            <ul class="list-group list-group-flush lead mb-auto">
+              <li class="list-group-item">
+                <span class="fw-bold">Location:</span> 64 Tran Phu, Ha Dong
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Time:</span> 08AM - 07PM
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> 0987654321
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span>
+                <a href="mailto:phungducgiang077@gmail.com"
+                  >phungducgiang077@gmail.com</a
+                >
+              </li>
+              <li class="list-group-item mb-0">
+                <span class="fw-bold">CEO:</span> Phung Duc Giang
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <iframe
+              id="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096535!2d144.95373531531857!3d-37.81627997975149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11c4b3%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2s!4v1610000000000!5m2!1sen!2s"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead m-0">Copyright &copy; 2024 Fullstack Mentor</p>
+        <a href="#" class="scroll-to-top position-absolute bottom-0 end-0 p-3">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin=""
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
